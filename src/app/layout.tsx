@@ -4,7 +4,7 @@ import { cn } from '@/lib/utils';
 import { Toaster } from "@/components/ui/toaster"
 
 export const metadata: Metadata = {
-  title: 'Static Showcase',
+  title: 'embera kretyve',
   description: 'A clean and minimal static showcase page created with Next.js and Firebase.',
 };
 

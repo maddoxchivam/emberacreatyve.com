@@ -9,15 +9,15 @@ export default function Footer() {
         <div className="flex items-center gap-2">
           <Image
             src="/imagen02.jpeg"
-            alt="Static Showcase Logo"
+            alt="embera kretyve Logo"
             width={32}
             height={32}
             className="rounded-full"
           />
-          <span className="font-bold">Static Showcase®</span>
+          <span className="font-bold">embera kretyve®</span>
         </div>
         <p className="text-sm text-muted-foreground mt-4 sm:mt-0">
-          © {currentYear} Static Showcase. All Rights Reserved.
+          © {currentYear} embera kretyve. All Rights Reserved.
         </p>
       </div>
     </footer>
