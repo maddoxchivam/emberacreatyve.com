@@ -28,14 +28,13 @@ export default function Hero() {
             embera kreatyve
           </h1>
           <p className="max-w-[700px] text-foreground/80 md:text-xl">
-            Discover a world of clean design and seamless user experience.
-            Built for performance, designed for people.
+            Un estudio de diseño y comunidad ritual que conecta raíces latinoamericanas con la sensibilidad contemporánea.
           </p>
           <div className="space-x-4">
             <Button asChild size="lg">
-              <Link href="#about">
+              <Link href="#welcome">
                 <ArrowDown className="mr-2 h-5 w-5" />
-                Explore
+                Explorar
               </Link>
             </Button>
           </div>
