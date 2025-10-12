@@ -7,11 +7,11 @@ import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { Logo } from "./logo";
 import { useState } from "react";
 
-const navLinks = [
-  { href: "#about", label: "About" },
-  { href: "#gallery", label: "Gallery" },
-  { href: "#video", label: "Video" },
-  { href: "#contact", label: "Contact" },
+const navLinks: { href: string, label: string }[] = [
+  // { href: "#about", label: "About" },
+  // { href: "#gallery", label: "Gallery" },
+  // { href: "#video", label: "Video" },
+  // { href: "#contact", label: "Contact" },
 ];
 
 export default function Header() {
