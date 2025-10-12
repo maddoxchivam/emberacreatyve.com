@@ -19,14 +19,14 @@ export default function Hero() {
         <div className="flex flex-col items-center space-y-8">
           <Image
             src="/imagen02.jpeg"
-            alt="embera kreatyve Logo"
+            alt="Embera Kreatyve Logo"
             width={180}
             height={180}
             className="rounded-full"
           />
           <div className="space-y-4">
             <h1 className="text-4xl font-bold tracking-tighter text-white sm:text-5xl md:text-6xl lg:text-7xl" style={{ textShadow: '0 0 10px rgba(0,0,0,0.5)' }}>
-              embera kreatyve
+              Embera Kreatyve
             </h1>
             <Button asChild size="lg">
               <Link href="https://emberacreatyve.myshopify.com/" target="_blank" rel="noopener noreferrer">
