@@ -20,8 +20,8 @@ export default function Hero() {
           <Image
             src="/imagen02.jpeg"
             alt="embera kreatyve Logo"
-            width={100}
-            height={100}
+            width={150}
+            height={150}
             className="rounded-full mb-4"
           />
           <h1 className="text-4xl font-bold tracking-tighter text-foreground sm:text-5xl md:text-6xl lg:text-7xl">
