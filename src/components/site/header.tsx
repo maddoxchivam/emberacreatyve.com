@@ -24,7 +24,7 @@ export default function Header() {
           <Link href="/" className="mr-6 flex items-center space-x-2">
             <Logo />
             <span className="hidden font-bold sm:inline-block">
-              embera kretyve
+              embera kreatyve
             </span>
           </Link>
           <nav className="flex items-center gap-6 text-sm">
@@ -53,7 +53,7 @@ export default function Header() {
             <div className="flex flex-col h-full">
               <Link href="/" className="flex items-center" onClick={() => setSheetOpen(false)}>
                 <Logo />
-                <span className="font-bold ml-2">embera kretyve</span>
+                <span className="font-bold ml-2">embera kreatyve</span>
               </Link>
               <div className="mt-8 flex flex-col space-y-4">
                 {navLinks.map((link) => (

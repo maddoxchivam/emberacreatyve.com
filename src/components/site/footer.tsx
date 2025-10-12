@@ -9,15 +9,15 @@ export default function Footer() {
         <div className="flex items-center gap-2">
           <Image
             src="/imagen02.jpeg"
-            alt="embera kretyve Logo"
+            alt="embera kreatyve Logo"
             width={32}
             height={32}
             className="rounded-full"
           />
-          <span className="font-bold">embera kretyve®</span>
+          <span className="font-bold">embera kreatyve®</span>
         </div>
         <p className="text-sm text-muted-foreground mt-4 sm:mt-0">
-          © {currentYear} embera kretyve. All Rights Reserved.
+          © {currentYear} embera kreatyve. All Rights Reserved.
         </p>
       </div>
     </footer>

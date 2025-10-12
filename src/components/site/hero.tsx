@@ -18,7 +18,7 @@ export default function Hero() {
       <div className="relative z-10 container px-4 md:px-6">
         <div className="flex flex-col items-center space-y-4">
           <h1 className="text-4xl font-bold tracking-tighter text-foreground sm:text-5xl md:text-6xl lg:text-7xl">
-            embera kretyve
+            embera kreatyve
           </h1>
           <p className="max-w-[700px] text-foreground/80 md:text-xl">
             Discover a world of clean design and seamless user experience.

@@ -7,7 +7,7 @@ export function Logo() {
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
       className="text-primary"
-      aria-label="embera kretyve Logo"
+      aria-label="embera kreatyve Logo"
     >
       <path
         d="M16 0L27.7128 8V24L16 32L4.28719 24V8L16 0Z"
