@@ -20,8 +20,8 @@ export default function Hero() {
           <Image
             src="/imagen02.jpeg"
             alt="embera kreatyve Logo"
-            width={150}
-            height={150}
+            width={180}
+            height={180}
             className="rounded-full"
           />
           <div className="space-y-4">
