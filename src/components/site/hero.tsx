@@ -1,5 +1,7 @@
 import Image from "next/image";
 import { Leaf, Globe, FileText, ShoppingBag, Handshake } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import Link from "next/link";
 
 export default function Hero() {
 
@@ -22,9 +24,16 @@ export default function Hero() {
             height={150}
             className="rounded-full"
           />
-          <h1 className="text-4xl font-bold tracking-tighter text-white sm:text-5xl md:text-6xl lg:text-7xl" style={{ textShadow: '0 0 10px rgba(0,0,0,0.5)' }}>
-            embera kreatyve
-          </h1>
+          <div className="space-y-4">
+            <h1 className="text-4xl font-bold tracking-tighter text-white sm:text-5xl md:text-6xl lg:text-7xl" style={{ textShadow: '0 0 10px rgba(0,0,0,0.5)' }}>
+              embera kreatyve
+            </h1>
+            <Button asChild size="lg">
+              <Link href="https://emberacreatyve.myshopify.com/" target="_blank" rel="noopener noreferrer">
+                Ir a la Tienda
+              </Link>
+            </Button>
+          </div>
           <div id="welcome" className="bg-background/80 backdrop-blur-sm p-8 rounded-lg max-w-4xl mx-auto">
              <div className="grid gap-10 lg:grid-cols-2 lg:gap-16">
               <div className="space-y-4 text-left">
@@ -78,6 +87,13 @@ export default function Hero() {
                   </li>
                 </ul>
               </div>
+            </div>
+            <div className="pt-6 text-center">
+              <Button asChild size="lg">
+                <Link href="https://emberacreatyve.myshopify.com/" target="_blank" rel="noopener noreferrer">
+                  Visita Nuestra Tienda
+                </Link>
+              </Button>
             </div>
           </div>
         </div>
