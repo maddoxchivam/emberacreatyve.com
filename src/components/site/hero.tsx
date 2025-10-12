@@ -17,6 +17,13 @@ export default function Hero() {
       <div className="absolute inset-0 bg-gradient-to-t from-background/80 via-background/20 to-transparent" />
       <div className="relative z-10 container px-4 md:px-6">
         <div className="flex flex-col items-center space-y-4">
+          <Image
+            src="/imagen02.jpeg"
+            alt="embera kreatyve Logo"
+            width={100}
+            height={100}
+            className="rounded-full mb-4"
+          />
           <h1 className="text-4xl font-bold tracking-tighter text-foreground sm:text-5xl md:text-6xl lg:text-7xl">
             embera kreatyve
           </h1>
