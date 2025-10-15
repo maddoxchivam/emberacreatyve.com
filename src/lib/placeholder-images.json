@@ -9,13 +9,13 @@
     {
       "id": "emberaLogo",
       "description": "Logo de Embera Kreatyve",
-      "imageUrl": "/imagen01.png",
+      "imageUrl": "https://picsum.photos/seed/logo/180/180",
       "imageHint": "logo"
     },
     {
       "id": "festivalPoster",
       "description": "Poster del festival Isla Ritual",
-      "imageUrl": "/imagen10.jpeg",
+      "imageUrl": "https://picsum.photos/seed/poster/150/212",
       "imageHint": "festival poster"
     }
   ]
