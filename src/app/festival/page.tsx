@@ -25,7 +25,7 @@ export default function FestivalPage() {
                     Isla Ritual
                   </h1>
                   <p className="mt-4 max-w-3xl mx-auto text-muted-foreground md:text-xl">
-                    Bienvenido al espacio donde las raíces y el ritual se encuentran. Aquí puedes detallar toda la información de tu festival: fechas, ubicación, artistas, talleres y la misión que lo impulsa.
+                    Festival Migrante de Música Electrónica y Cultura Comunitaria
                   </p>
                 </div>
                 
@@ -38,24 +38,15 @@ export default function FestivalPage() {
                 />
 
                 <div className="prose prose-lg max-w-4xl mx-auto text-foreground text-left">
-                  <h2>Sobre el Festival</h2>
                   <p>
-                    Este es un buen lugar para describir la esencia de tu evento. Habla sobre la experiencia que ofreces, la comunidad que se reúne y el propósito detrás de cada actividad. Conecta con tu audiencia a un nivel más profundo.
+                    Bienvenidos a la plataforma oficial de Isla Ritual, un festival expandido que conecta tres territorios—Colombia, Polonia y las Islas Canarias—a través de música electrónica, diseño ritual y activación comunitaria.
                   </p>
-                  
-                  <h2>Programa y Actividades</h2>
                   <p>
-                    Detalla el cronograma del festival. Puedes usar una lista para organizar los eventos por día y hora:
+                    Durante ocho meses, esta constelación cultural se desplegará en espacios físicos y digitales, con eventos mensuales, cápsulas sonoras, intervenciones urbanas y colaboraciones internacionales. Aquí encontrarás el cronograma completo, el manifiesto migrante, acceso a la radio digital y la tienda simbólica Bagshopp.
                   </p>
-                  <ul>
-                    <li><strong>Día 1:</strong> Ceremonia de Apertura, Concierto Acústico, Taller de Arte Ritual.</li>
-                    <li><strong>Día 2:</strong> Meditación Guiada, Charla sobre Sabiduría Ancestral, Mercado de Artesanías.</li>
-                    <li><strong>Día 3:</strong> Círculo de Canto, Danza Comunitaria, Ceremonia de Cierre.</li>
-                  </ul>
-
-                  <h2>Artistas y Facilitadores</h2>
                   <p>
-                    Presenta a las personas que harán de este festival una experiencia inolvidable. Incluye una breve biografía y su contribución al evento.
+                    Esta no es una simulación.
+                    Los dominios están activos. Las alianzas están en marcha. La comunidad está convocada. Isla Ritual es real, y tú estás dentro.
                   </p>
                 </div>
 
