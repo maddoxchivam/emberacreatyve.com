@@ -6,6 +6,9 @@ import { Toaster } from "@/components/ui/toaster"
 export const metadata: Metadata = {
   title: 'Embera Kreatyve',
   description: 'A clean and minimal static showcase page created with Next.js and Firebase.',
+  icons: {
+    icon: '/favicon.ico',
+  },
 };
 
 export default function RootLayout({
