@@ -8,7 +8,7 @@ export default function Home() {
       <main className="flex-1">
         <div className="w-full flex justify-center py-8 bg-background">
             <Image
-                src="/image02.jpeg"
+                src="/imagen02.jpeg"
                 alt="Imagen superior"
                 width={800}
                 height={450}
