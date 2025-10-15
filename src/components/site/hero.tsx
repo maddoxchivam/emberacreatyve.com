@@ -46,8 +46,8 @@ export default function Hero() {
                 src={posterImage.imageUrl}
                 alt={posterImage.description}
                 data-ai-hint={posterImage.imageHint}
-                width={75}
-                height={106}
+                width={150}
+                height={212}
                 className="rounded-lg object-cover cursor-pointer"
               />
             </Link>
