@@ -25,24 +25,26 @@ export default function Hero() {
             className="rounded-full"
           />
           <div className="space-y-4">
-            <h1 className="text-4xl font-bold tracking-tighter text-white sm:text-5xl md:text-6xl lg:text-7xl" style={{ textShadow: '0 0 10px rgba(0,0,0,0.5)' }}>
+            <h1 className="font-display text-4xl font-bold tracking-tighter text-white sm:text-5xl md:text-6xl lg:text-7xl" style={{ textShadow: '0 0 10px rgba(0,0,0,0.5)' }}>
               Embera Kreatyve
             </h1>
+          </div>
+          <div className="flex flex-col items-center space-y-6">
             <Button asChild size="lg">
               <Link href="https://emberacreatyve.myshopify.com/" target="_blank" rel="noopener noreferrer">
                 Ir a la Tienda
               </Link>
             </Button>
+            <Link href="/festival">
+              <Image
+                src="/imagen10.jpeg"
+                alt="Imagen decorativa de Embera Kreatyve"
+                width={600}
+                height={400}
+                className="rounded-lg object-cover cursor-pointer"
+              />
+            </Link>
           </div>
-          <Link href="/festival">
-            <Image
-              src="/imagen10.jpeg"
-              alt="Imagen decorativa de Embera Kreatyve"
-              width={600}
-              height={400}
-              className="rounded-lg object-cover cursor-pointer"
-            />
-          </Link>
           <div id="welcome" className="bg-background/80 backdrop-blur-sm p-8 rounded-lg max-w-4xl mx-auto">
              <div className="grid gap-10 lg:grid-cols-2 lg:gap-16">
               <div className="space-y-4 text-left">
