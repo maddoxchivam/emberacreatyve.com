@@ -3,7 +3,7 @@
     {
       "id": "heroBackground",
       "description": "Fondo abstracto para el festival",
-      "imageUrl": "https://picsum.photos/seed/bg/1200/800",
+      "imageUrl": "/imagen01.png",
       "imageHint": "abstract festival"
     },
     {
@@ -15,7 +15,7 @@
     {
       "id": "festivalPoster",
       "description": "Poster del festival Isla Ritual",
-      "imageUrl": "https://picsum.photos/seed/poster/300/424",
+      "imageUrl": "/imagen10.jpeg",
       "imageHint": "festival poster"
     }
   ]
