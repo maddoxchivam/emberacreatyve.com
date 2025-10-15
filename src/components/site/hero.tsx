@@ -39,8 +39,8 @@ export default function Hero() {
               <Image
                 src="/imagen10.jpeg"
                 alt="Imagen decorativa de Embera Kreatyve"
-                width={300}
-                height={200}
+                width={150}
+                height={100}
                 className="rounded-lg object-cover cursor-pointer"
               />
             </Link>
