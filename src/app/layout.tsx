@@ -2,6 +2,21 @@ import type { Metadata } from 'next';
 import './globals.css';
 import { cn } from '@/lib/utils';
 import { Toaster } from "@/components/ui/toaster"
+import { Audiowide, PT_Sans } from 'next/font/google';
+
+const audiowide = Audiowide({
+  subsets: ['latin'],
+  display: 'swap',
+  weight: '400',
+  variable: '--font-audiowide',
+});
+
+const ptSans = PT_Sans({
+  subsets: ['latin'],
+  display: 'swap',
+  weight: ['400', '700'],
+  variable: '--font-pt-sans',
+});
 
 export const metadata: Metadata = {
   title: 'Embera Kreatyve',
@@ -17,12 +32,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="es" suppressHydrationWarning>
-      <head>
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-        <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet" />
-      </head>
+    <html lang="es" suppressHydrationWarning className={`${audiowide.variable} ${ptSans.variable}`}>
+      <head />
       <body className={cn('font-body antialiased min-h-screen bg-background')}>
         {children}
         <Toaster />
