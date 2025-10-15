@@ -32,9 +32,9 @@ export default function FestivalPage() {
                 <Image
                   src="/imagen10.jpeg"
                   alt="Poster del festival"
-                  width={800}
-                  height={450}
-                  className="rounded-lg w-full max-w-2xl mx-auto h-auto"
+                  width={600}
+                  height={338}
+                  className="rounded-lg w-full max-w-lg mx-auto h-auto"
                 />
 
                 <div className="prose prose-lg max-w-4xl mx-auto text-foreground text-left">
