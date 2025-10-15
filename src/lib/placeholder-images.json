@@ -3,19 +3,19 @@
     {
       "id": "heroBackground",
       "description": "Fondo abstracto para el festival",
-      "imageUrl": "https://picsum.photos/seed/festivalbg/1920/1080",
+      "imageUrl": "https://picsum.photos/seed/bg/1200/800",
       "imageHint": "abstract festival"
     },
     {
       "id": "emberaLogo",
       "description": "Logo de Embera Kreatyve",
-      "imageUrl": "/imagen01.png",
+      "imageUrl": "https://picsum.photos/seed/logo/200/200",
       "imageHint": "logo"
     },
     {
       "id": "festivalPoster",
       "description": "Poster del festival Isla Ritual",
-      "imageUrl": "/imagen10.jpeg",
+      "imageUrl": "https://picsum.photos/seed/poster/300/424",
       "imageHint": "festival poster"
     }
   ]
