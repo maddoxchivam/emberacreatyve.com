@@ -32,9 +32,10 @@ export default function FestivalPage() {
                 <Image
                   src="/imagen10.jpeg"
                   alt="Poster del festival"
-                  width={300}
-                  height={169}
-                  className="rounded-lg w-full max-w-sm mx-auto h-auto"
+                  width={150}
+                  height={84}
+                  className="rounded-lg w-auto max-w-xs mx-auto h-auto"
+                  style={{ maxHeight: '250px', width: 'auto' }}
                 />
 
                 <div className="prose prose-lg max-w-4xl mx-auto text-foreground text-left">
@@ -48,6 +49,15 @@ export default function FestivalPage() {
                     Esta no es una simulación.
                     Los dominios están activos. Las alianzas están en marcha. La comunidad está convocada. Isla Ritual es real, y tú estás dentro.
                   </p>
+                </div>
+                
+                <div className="border border-border rounded-lg p-6 bg-card/50 text-left">
+                  <h3 className="font-bold text-lg text-foreground mb-4">🌍 ¿Por qué este festival importa?</h3>
+                  <ul className="space-y-2 text-foreground">
+                    <li>Porque transforma la migración en pertenencia.</li>
+                    <li>Porque convierte la técnica en poesía.</li>
+                    <li>Porque activa el turismo, el comercio y la cultura desde lo simbólico.</li>
+                  </ul>
                 </div>
 
                 <div className="text-center pt-8">
