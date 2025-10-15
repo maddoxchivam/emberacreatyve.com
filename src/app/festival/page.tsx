@@ -38,10 +38,9 @@ export default function FestivalPage() {
                   src={posterImage.imageUrl}
                   alt={posterImage.description}
                   data-ai-hint={posterImage.imageHint}
-                  width={150}
-                  height={212}
+                  width={75}
+                  height={106}
                   className="rounded-lg w-auto h-auto mx-auto"
-                  style={{ maxHeight: '250px' }}
                 />
 
                 <div className="prose prose-lg max-w-4xl mx-auto text-foreground text-left">
