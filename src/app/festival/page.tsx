@@ -31,10 +31,10 @@ export default function FestivalPage() {
                 
                 <Image
                   src="/imagen10.jpeg"
-                  alt="Imagen principal del festival"
-                  width={1200}
-                  height={600}
-                  className="rounded-lg object-cover w-full aspect-[2/1]"
+                  alt="Poster del festival"
+                  width={800}
+                  height={400}
+                  className="rounded-lg object-cover w-full max-w-2xl mx-auto aspect-video"
                 />
 
                 <div className="prose prose-lg max-w-4xl mx-auto text-foreground text-left">
