@@ -9,7 +9,7 @@
     {
       "id": "emberaLogo",
       "description": "Logo de Embera Kreatyve",
-      "imageUrl": "https://picsum.photos/seed/logo/200/200",
+      "imageUrl": "/logo.png",
       "imageHint": "logo"
     },
     {
