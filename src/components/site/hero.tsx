@@ -6,7 +6,7 @@ import { getPlaceholderImage } from "@/lib/placeholder-images";
 
 export default function Hero() {
   const bgImage = getPlaceholderImage("heroBackground");
-  const logoImage = getPlaceholderImage("emberaLogo");
+  const circularImage = getPlaceholderImage("circularImage");
   const posterImage = getPlaceholderImage("festivalPoster");
 
   return (
@@ -23,9 +23,9 @@ export default function Hero() {
       <div className="relative z-10 container px-4 md:px-6">
         <div className="flex flex-col items-center space-y-8">
           <Image
-            src={logoImage.imageUrl}
-            alt={logoImage.description}
-            data-ai-hint={logoImage.imageHint}
+            src={circularImage.imageUrl}
+            alt={circularImage.description}
+            data-ai-hint={circularImage.imageHint}
             width={180}
             height={180}
             className="rounded-full"
