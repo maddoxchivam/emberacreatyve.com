@@ -34,13 +34,15 @@ export default function Hero() {
               </Link>
             </Button>
           </div>
-          <Image
-            src="/imagen10.jpeg"
-            alt="Imagen decorativa de Embera Kreatyve"
-            width={600}
-            height={400}
-            className="rounded-lg object-cover"
-          />
+          <Link href="/festival">
+            <Image
+              src="/imagen10.jpeg"
+              alt="Imagen decorativa de Embera Kreatyve"
+              width={600}
+              height={400}
+              className="rounded-lg object-cover cursor-pointer"
+            />
+          </Link>
           <div id="welcome" className="bg-background/80 backdrop-blur-sm p-8 rounded-lg max-w-4xl mx-auto">
              <div className="grid gap-10 lg:grid-cols-2 lg:gap-16">
               <div className="space-y-4 text-left">
