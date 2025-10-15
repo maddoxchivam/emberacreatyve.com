@@ -21,8 +21,8 @@ export default function FestivalPage() {
             <div className="bg-background/80 backdrop-blur-sm p-8 rounded-lg max-w-4xl mx-auto">
               <div className="space-y-8">
                 <div className="text-center space-y-4">
-                  <h1 className="text-4xl font-bold tracking-tighter text-foreground sm:text-5xl md:text-6xl">
-                    Festival Ancestral
+                  <h1 className="font-display text-4xl font-bold tracking-tighter text-foreground sm:text-5xl md:text-6xl">
+                    Isla Ritual
                   </h1>
                   <p className="mt-4 max-w-3xl mx-auto text-muted-foreground md:text-xl">
                     Bienvenido al espacio donde las raíces y el ritual se encuentran. Aquí puedes detallar toda la información de tu festival: fechas, ubicación, artistas, talleres y la misión que lo impulsa.
