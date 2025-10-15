@@ -33,9 +33,9 @@ export default function FestivalPage() {
                   src="/imagen10.jpeg"
                   alt="Poster del festival"
                   width={150}
-                  height={84}
-                  className="rounded-lg w-auto max-w-xs mx-auto h-auto"
-                  style={{ maxHeight: '250px', width: 'auto' }}
+                  height={212}
+                  className="rounded-lg w-auto h-auto mx-auto"
+                  style={{ maxHeight: '250px' }}
                 />
 
                 <div className="prose prose-lg max-w-4xl mx-auto text-foreground text-left">
@@ -57,6 +57,25 @@ export default function FestivalPage() {
                     <li>Porque transforma la migración en pertenencia.</li>
                     <li>Porque convierte la técnica en poesía.</li>
                     <li>Porque activa el turismo, el comercio y la cultura desde lo simbólico.</li>
+                  </ul>
+                </div>
+
+                <div className="border border-border rounded-lg p-6 bg-card/50 text-left">
+                  <h3 className="font-bold text-lg text-foreground mb-4">🔗 Accede a los espacios del festival:</h3>
+                  <ul className="space-y-3 text-foreground">
+                    <li>
+                      <span className="font-semibold">🎧 Radio Isla Ritual</span> – Emisora digital comunitaria
+                    </li>
+                    <li>
+                      <Link href="https://bagshopp.com" target="_blank" rel="noopener noreferrer" className="font-semibold hover:underline">
+                        🛒 Bagshopp.com
+                      </Link> – Comercio electrónico simbólico
+                    </li>
+                    <li>
+                      <Link href="https://bagshopp.net" target="_blank" rel="noopener noreferrer" className="font-semibold hover:underline">
+                        🛡️ Bagshopp.net
+                      </Link> – Archivo técnico y respaldo internacional
+                    </li>
                   </ul>
                 </div>
 
