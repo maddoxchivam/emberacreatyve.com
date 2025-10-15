@@ -1,15 +1,18 @@
 import Image from "next/image";
+import { getPlaceholderImage } from "@/lib/placeholder-images";
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
+  const logoImage = getPlaceholderImage("emberaLogo");
 
   return (
     <footer className="bg-secondary py-6">
       <div className="container mx-auto px-4 md:px-6 flex flex-col sm:flex-row items-center justify-between">
         <div className="flex items-center gap-2">
           <Image
-            src="/imagen02.jpeg"
-            alt="Embera Kreatyve Logo"
+            src={logoImage.imageUrl}
+            alt={logoImage.description}
+            data-ai-hint={logoImage.imageHint}
             width={32}
             height={32}
             className="rounded-full"

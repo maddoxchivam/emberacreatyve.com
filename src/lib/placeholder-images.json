@@ -1,34 +1,22 @@
 {
   "placeholderImages": [
     {
-      "id": "hero",
-      "description": "Abstract blue and lavender background",
-      "imageUrl": "https://picsum.photos/seed/hero/1920/1080",
-      "imageHint": "abstract background"
+      "id": "heroBackground",
+      "description": "Fondo abstracto para el festival",
+      "imageUrl": "https://picsum.photos/seed/festivalbg/1920/1080",
+      "imageHint": "abstract festival"
     },
     {
-      "id": "gallery1",
-      "description": "A tranquil beach scene at dawn",
-      "imageUrl": "https://picsum.photos/seed/g1/600/400",
-      "imageHint": "beach dawn"
+      "id": "emberaLogo",
+      "description": "Logo de Embera Kreatyve",
+      "imageUrl": "https://picsum.photos/seed/emberalogo/200/200",
+      "imageHint": "logo"
     },
     {
-      "id": "gallery2",
-      "description": "A modern architectural building with clean lines",
-      "imageUrl": "https://picsum.photos/seed/g2/600/400",
-      "imageHint": "modern architecture"
-    },
-    {
-      "id": "gallery3",
-      "description": "A close-up of a blooming lavender flower",
-      "imageUrl": "https://picsum.photos/seed/g3/600/400",
-      "imageHint": "lavender flower"
-    },
-    {
-      "id": "gallery4",
-      "description": "An aerial view of a winding river through a forest",
-      "imageUrl": "https://picsum.photos/seed/g4/600/400",
-      "imageHint": "aerial river"
+      "id": "festivalPoster",
+      "description": "Poster del festival Isla Ritual",
+      "imageUrl": "https://picsum.photos/seed/festivalposter/424/600",
+      "imageHint": "festival poster"
     }
   ]
 }

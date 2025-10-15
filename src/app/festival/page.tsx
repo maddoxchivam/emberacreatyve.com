@@ -3,15 +3,20 @@ import Link from "next/link";
 import Image from "next/image";
 import Footer from "@/components/site/footer";
 import { ArrowLeft } from "lucide-react";
+import { getPlaceholderImage } from "@/lib/placeholder-images";
 
 export default function FestivalPage() {
+  const bgImage = getPlaceholderImage("heroBackground");
+  const posterImage = getPlaceholderImage("festivalPoster");
+
   return (
     <div className="flex flex-col min-h-dvh bg-background">
       <main className="flex-1">
         <section className="relative w-full py-20 md:py-32 flex items-center justify-center text-center">
           <Image
-            src="/imagen01.png"
-            alt="Imagen de fondo"
+            src={bgImage.imageUrl}
+            alt={bgImage.description}
+            data-ai-hint={bgImage.imageHint}
             fill
             className="object-cover"
             priority
@@ -30,8 +35,9 @@ export default function FestivalPage() {
                 </div>
                 
                 <Image
-                  src="/imagen10.jpeg"
-                  alt="Poster del festival"
+                  src={posterImage.imageUrl}
+                  alt={posterImage.description}
+                  data-ai-hint={posterImage.imageHint}
                   width={150}
                   height={212}
                   className="rounded-lg w-auto h-auto mx-auto"

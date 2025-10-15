@@ -2,14 +2,19 @@ import Image from "next/image";
 import { Leaf, Globe, FileText, ShoppingBag, Handshake } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
+import { getPlaceholderImage } from "@/lib/placeholder-images";
 
 export default function Hero() {
+  const bgImage = getPlaceholderImage("heroBackground");
+  const logoImage = getPlaceholderImage("emberaLogo");
+  const posterImage = getPlaceholderImage("festivalPoster");
 
   return (
     <section className="relative w-full py-20 md:py-32 flex items-center justify-center text-center animate-fade-in">
       <Image
-        src="/imagen01.png"
-        alt="Imagen de fondo"
+        src={bgImage.imageUrl}
+        alt={bgImage.description}
+        data-ai-hint={bgImage.imageHint}
         fill
         className="object-cover"
         priority
@@ -18,8 +23,9 @@ export default function Hero() {
       <div className="relative z-10 container px-4 md:px-6">
         <div className="flex flex-col items-center space-y-8">
           <Image
-            src="/imagen02.jpeg"
-            alt="Embera Kreatyve Logo"
+            src={logoImage.imageUrl}
+            alt={logoImage.description}
+            data-ai-hint={logoImage.imageHint}
             width={180}
             height={180}
             className="rounded-full"
@@ -37,10 +43,11 @@ export default function Hero() {
             </Button>
             <Link href="/festival">
               <Image
-                src="/imagen10.jpeg"
-                alt="Imagen decorativa de Embera Kreatyve"
-                width={150}
-                height={100}
+                src={posterImage.imageUrl}
+                alt={posterImage.description}
+                data-ai-hint={posterImage.imageHint}
+                width={75}
+                height={50}
                 className="rounded-lg object-cover cursor-pointer"
               />
             </Link>
