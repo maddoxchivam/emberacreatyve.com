@@ -3,7 +3,7 @@ import { getPlaceholderImage } from "@/lib/placeholder-images";
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
-  const logoImage = getPlaceholderImage("emberaLogo");
+  const logoImage = getPlaceholderImage("circularImage");
 
   return (
     <footer className="bg-secondary py-6">
