@@ -30,7 +30,7 @@ export default function TiendaPage() {
         name: 'Sudadera Ecológica Unisex',
         description: 'Confeccionada en algodón orgánico, esta camiseta es suave, resistente y cómoda. Tu nombre, tu símbolo. Tu camiseta, tu ritual.',
         imageUrls: [
-          '/imagen100.webp',
+          'https://emberacreatyve.myshopify.com/cdn/shop/files/cotton-heritage-m2580-i-unisex-premium-pullover-hoodie-white-front-68eb4f0d9f446.jpg?v=1760251683&width=832',
           'https://picsum.photos/seed/sudadera-2/600/600',
           'https://picsum.photos/seed/sudadera-3/600/600'
         ],
@@ -77,6 +77,7 @@ export default function TiendaPage() {
                             height={600}
                             data-ai-hint={product.imageHint}
                             className="object-cover w-full h-80"
+                            unoptimized={url.startsWith('https://emberacreatyve.myshopify.com')}
                           />
                         </CarouselItem>
                       ))}
