@@ -36,38 +36,6 @@ export default function TiendaPage() {
         ],
         imageHint: 'organic sweatshirt',
         shopifyUrl: 'https://emberacreatyve.myshopify.com/products/unisex-eco-sweatshirt?variant=55859785105788'
-      },
-      {
-        id: 'taza-de-la-gratitud',
-        name: 'Taza de la Gratitud',
-        description: 'Un objeto para iniciar tus mañanas con intención.',
-        imageUrls: ['https://picsum.photos/seed/taza-gratitud/600/600'],
-        imageHint: 'gratitude mug',
-        shopifyUrl: '#'
-      },
-      {
-        id: 'bolso-de-la-migracion-creativa',
-        name: 'Bolso de la Migración Creativa',
-        description: 'Para llevar contigo el símbolo de tu viaje.',
-        imageUrls: ['https://picsum.photos/seed/bolso-migracion/600/600'],
-        imageHint: 'creative bag',
-        shopifyUrl: '#'
-      },
-      {
-        id: 'vela-de-la-introspeccion',
-        name: 'Vela de la Introspección',
-        description: 'Ilumina tus momentos de reflexión y calma.',
-        imageUrls: ['https://picsum.photos/seed/vela-introspeccion/600/600'],
-        imageHint: 'introspection candle',
-        shopifyUrl: '#'
-      },
-      {
-        id: 'cuaderno-de-rituales',
-        name: 'Cuaderno de Rituales',
-        description: 'Plasma tus ideas, sueños y rituales diarios.',
-        imageUrls: ['https://picsum.photos/seed/cuaderno-rituales/600/600'],
-        imageHint: 'ritual journal',
-        shopifyUrl: '#'
       }
     ];
 
@@ -91,9 +59,9 @@ export default function TiendaPage() {
           <p className="text-lg text-muted-foreground">Cada objeto es un ancla, un símbolo para tu práctica diaria.</p>
         </div>
         
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12 justify-center">
           {isLoading ? (
-            Array.from({ length: 3 }).map((_, index) => (
+            Array.from({ length: 1 }).map((_, index) => (
               <Skeleton key={index} className="h-[450px] w-full" />
             ))
           ) : (
