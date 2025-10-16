@@ -1,58 +1,57 @@
 'use client';
 
-import { useEffect, useState } from 'react';
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import { Skeleton } from '@/components/ui/skeleton';
+import { useState, useRef } from 'react';
+import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/components/ui/card';
 import Image from 'next/image';
 import Footer from '@/components/site/footer';
 import { Button } from '@/components/ui/button';
 import Link from 'next/link';
-import { ArrowLeft } from 'lucide-react';
+import { ArrowLeft, Send } from 'lucide-react';
+import { Input } from '@/components/ui/input';
+import { Label } from '@/components/ui/label';
+import { Textarea } from '@/components/ui/textarea';
+import { useToast } from '@/hooks/use-toast';
 
 interface Product {
-  id: string;
-  title: string;
-  productUid: string;
-  previewImageUrls: string[];
+  name: string;
+  description: string;
+  imageUrl: string;
 }
 
+const products: Product[] = [
+  {
+    name: 'Taza de la Gratitud',
+    description: 'Un objeto para iniciar tus mañanas con intención.',
+    imageUrl: 'https://picsum.photos/seed/taza/400/300'
+  },
+  {
+    name: 'Bolso de la Migración Creativa',
+    description: 'Para llevar contigo el símbolo de tu viaje.',
+    imageUrl: 'https://picsum.photos/seed/bolso/400/300'
+  }
+];
+
 export default function TiendaPage() {
-  const [products, setProducts] = useState<Product[]>([]);
-  const [loading, setLoading] = useState(true);
-  const [error, setError] = useState<string | null>(null);
+  const [selectedProduct, setSelectedProduct] = useState<string | null>(null);
+  const { toast } = useToast();
+  const formRef = useRef<HTMLDivElement>(null);
 
-  useEffect(() => {
-    async function fetchProducts() {
-      const apiKey = process.env.NEXT_PUBLIC_GELATO_API_KEY;
-      if (!apiKey || apiKey === 'tu_clave_api') {
-        setError('La clave de la API de Gelato no está configurada. Por favor, añádela al archivo .env.local');
-        setLoading(false);
-        return;
-      }
+  const abrirFormulario = (productName: string) => {
+    setSelectedProduct(productName);
+    setTimeout(() => {
+      formRef.current?.scrollIntoView({ behavior: 'smooth' });
+    }, 100);
+  };
 
-      try {
-        const response = await fetch('https://order.gelatoapis.com/v3/products', {
-          headers: {
-            'X-API-KEY': apiKey,
-          },
-        });
-
-        if (!response.ok) {
-          throw new Error(`Error al obtener los productos: ${response.statusText}`);
-        }
-
-        const data = await response.json();
-        // Gelato API returns products in a 'products' array
-        setProducts(data.products);
-      } catch (err: any) {
-        setError(err.message);
-      } finally {
-        setLoading(false);
-      }
-    }
-
-    fetchProducts();
-  }, []);
+  const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
+    event.preventDefault();
+    // TODO: Implementar la integración con Firebase cuando la plataforma esté estable.
+    toast({
+      title: "Ritual Completado ✨",
+      description: "Tu pedido ha sido registrado en espíritu. La integración final se completará pronto.",
+    });
+    setSelectedProduct(null); // Ocultar el formulario después de enviar
+  };
 
   return (
     <div className="flex flex-col min-h-dvh bg-background">
@@ -65,48 +64,68 @@ export default function TiendaPage() {
         </Button>
       </header>
       <main className="flex-1 container mx-auto px-4 md:px-6 py-8">
-        <h1 className="text-4xl font-bold font-display mb-8 text-center">Nuestra Tienda</h1>
+        <div className="text-center mb-12">
+            <h1 className="text-4xl font-bold font-display mb-2">🧿 Elige tu objeto ritual</h1>
+            <p className="text-lg text-muted-foreground">Cada objeto es un ancla, un símbolo para tu práctica diaria.</p>
+        </div>
         
-        {loading && (
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-            {Array.from({ length: 8 }).map((_, index) => (
-              <Card key={index}>
-                <CardHeader>
-                  <Skeleton className="h-40 w-full" />
-                </CardHeader>
-                <CardContent>
-                  <Skeleton className="h-6 w-3/4" />
-                </CardContent>
-              </Card>
-            ))}
-          </div>
-        )}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+          {products.map((product) => (
+            <Card key={product.name} className="overflow-hidden shadow-lg hover:shadow-xl transition-shadow">
+              <CardHeader className="p-0">
+                <Image
+                  src={product.imageUrl}
+                  alt={product.name}
+                  width={400}
+                  height={300}
+                  className="object-cover w-full h-60"
+                />
+              </CardHeader>
+              <CardContent className="p-6">
+                <CardTitle className="text-2xl font-bold mb-2">{product.name}</CardTitle>
+                <CardDescription className="text-base mb-4">{product.description}</CardDescription>
+                <Button onClick={() => abrirFormulario(product.name)} className="w-full">
+                  Quiero este objeto
+                </Button>
+              </CardContent>
+            </Card>
+          ))}
+        </div>
 
-        {error && (
-          <div className="text-center text-destructive bg-destructive/10 p-4 rounded-lg">
-            <h2 className="font-bold">Error</h2>
-            <p>{error}</p>
-          </div>
-        )}
-
-        {!loading && !error && (
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-            {products.map((product) => (
-              <Card key={product.id} className="overflow-hidden">
-                <CardHeader className="p-0">
-                  <Image
-                    src={product.previewImageUrls[0] || 'https://picsum.photos/seed/default/400/400'}
-                    alt={product.title}
-                    width={400}
-                    height={400}
-                    className="object-cover w-full h-60"
-                  />
-                </CardHeader>
-                <CardContent className="p-4">
-                  <CardTitle className="text-lg font-semibold h-14">{product.title}</CardTitle>
-                </CardContent>
-              </Card>
-            ))}
+        {selectedProduct && (
+          <div id="formularioPedido" ref={formRef} className="bg-card p-8 rounded-lg shadow-xl border max-w-2xl mx-auto">
+            <h2 className="text-3xl font-bold text-center mb-6">📝 Completa tu ritual de pedido</h2>
+            <form onSubmit={handleSubmit} className="space-y-6">
+              <div>
+                <Label className="text-sm font-semibold">Objeto Seleccionado:</Label>
+                <p className="font-bold text-lg text-primary mt-1">{selectedProduct}</p>
+              </div>
+              <div className="space-y-2">
+                <Label htmlFor="nombre">Nombre completo</Label>
+                <Input id="nombre" name="nombre" type="text" placeholder="Tu nombre y apellido" required />
+              </div>
+              <div className="space-y-2">
+                <Label htmlFor="email">Correo electrónico</Label>
+                <Input id="email" name="email" type="email" placeholder="tu@correo.com" required />
+              </div>
+              <div className="space-y-2">
+                <Label htmlFor="direccion">Dirección de envío</Label>
+                <Input id="direccion" name="direccion" type="text" placeholder="Calle, número, ciudad, país" required />
+              </div>
+              <div className="space-y-2">
+                <Label htmlFor="mensaje">Mensaje ritual (opcional)</Label>
+                <Textarea id="mensaje" name="mensaje" placeholder="Una intención, un deseo, un agradecimiento..." />
+              </div>
+              <div className="flex justify-end gap-4">
+                 <Button type="button" variant="ghost" onClick={() => setSelectedProduct(null)}>
+                    Cancelar
+                </Button>
+                <Button type="submit">
+                  <Send className="mr-2"/>
+                  Enviar pedido
+                </Button>
+              </div>
+            </form>
           </div>
         )}
       </main>
