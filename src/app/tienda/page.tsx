@@ -42,7 +42,7 @@ export default function TiendaPage() {
         name: 'Sudadera con Capucha Precolombino',
         description: 'Sumérgete en la riqueza de la historia con nuestra Sudadera con Capucha Precolombino Heavy Blend. Un diseño que rinde homenaje a las culturas ancestrales.',
         imageUrls: [
-          'https://emberacreatyve.myshopify.com/cdn/shop/files/gildan-18500-unisex-heavy-blend-hoodie-black-front-68f760e909944.jpg?v=1760596395&width=832',
+          'https://emberacreatyve.myshopify.com/cdn/shop/files/e5568e99-6685-465e-a758-0d3a007ffc77.webp?v=1760644516&width=832',
           'https://emberacreatyve.myshopify.com/cdn/shop/files/gildan-18500-unisex-heavy-blend-hoodie-black-back-68f760e908906.jpg?v=1760596394&width=832',
           'https://emberacreatyve.myshopify.com/cdn/shop/files/gildan-18500-unisex-heavy-blend-hoodie-black-zoomed-in-68f760e90a071.jpg?v=1760596396&width=832'
         ],
