@@ -31,7 +31,7 @@ export default function TiendaPage() {
         description: 'Confeccionada en algodón orgánico, esta camiseta es suave, resistente y cómoda. Tu nombre, tu símbolo. Tu camiseta, tu ritual.',
         imageUrls: [
           'https://emberacreatyve.myshopify.com/cdn/shop/files/cotton-heritage-m2580-i-unisex-premium-pullover-hoodie-white-front-68eb4f0d9f446.jpg?v=1760251683&width=832',
-          'https://picsum.photos/seed/sudadera-2/600/600',
+          'https://emberacreatyve.myshopify.com/cdn/shop/files/unisex-eco-sweatshirt-white-front-68eb4ce3c5748.jpg?v=1760251117&width=3840',
           'https://picsum.photos/seed/sudadera-3/600/600'
         ],
         imageHint: 'organic sweatshirt',
