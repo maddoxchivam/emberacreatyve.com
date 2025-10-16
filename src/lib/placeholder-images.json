@@ -13,12 +13,6 @@
       "imageHint": "logo"
     },
     {
-      "id": "festivalPoster",
-      "description": "Poster del festival Isla Ritual",
-      "imageUrl": "/imagen10.jpeg",
-      "imageHint": "festival poster"
-    },
-    {
       "id": "circularImage",
       "description": "Imagen circular sobre el fondo",
       "imageUrl": "/imagen02.jpeg",

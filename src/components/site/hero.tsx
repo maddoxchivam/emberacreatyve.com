@@ -7,7 +7,6 @@ import { getPlaceholderImage } from "@/lib/placeholder-images";
 export default function Hero() {
   const bgImage = getPlaceholderImage("heroBackground");
   const circularImage = getPlaceholderImage("circularImage");
-  const posterImage = getPlaceholderImage("festivalPoster");
 
   return (
     <section className="relative w-full py-20 md:py-32 flex items-center justify-center text-center animate-fade-in">
@@ -41,16 +40,6 @@ export default function Hero() {
                 Ir a la Tienda
               </Link>
             </Button>
-            <Link href="/festival">
-              <Image
-                src={posterImage.imageUrl}
-                alt={posterImage.description}
-                data-ai-hint={posterImage.imageHint}
-                width={150}
-                height={212}
-                className="rounded-lg object-cover cursor-pointer"
-              />
-            </Link>
           </div>
           <div id="welcome" className="bg-background/80 backdrop-blur-sm p-8 rounded-lg max-w-4xl mx-auto">
              <div className="grid gap-10 lg:grid-cols-2 lg:gap-16">
