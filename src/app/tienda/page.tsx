@@ -13,21 +13,41 @@ import { Textarea } from '@/components/ui/textarea';
 import { useToast } from '@/hooks/use-toast';
 
 interface Product {
+  id: string;
   name: string;
   description: string;
   imageUrl: string;
+  imageHint: string;
 }
 
 const products: Product[] = [
   {
+    id: 'taza',
     name: 'Taza de la Gratitud',
     description: 'Un objeto para iniciar tus mañanas con intención.',
-    imageUrl: 'https://picsum.photos/seed/taza/400/300'
+    imageUrl: 'https://picsum.photos/seed/taza-gratitud/400/300',
+    imageHint: 'gratitude mug'
   },
   {
+    id: 'bolso',
     name: 'Bolso de la Migración Creativa',
     description: 'Para llevar contigo el símbolo de tu viaje.',
-    imageUrl: 'https://picsum.photos/seed/bolso/400/300'
+    imageUrl: 'https://picsum.photos/seed/bolso-migracion/400/300',
+    imageHint: 'creative bag'
+  },
+  {
+    id: 'vela',
+    name: 'Vela de la Introspección',
+    description: 'Ilumina tus momentos de reflexión y calma.',
+    imageUrl: 'https://picsum.photos/seed/vela-introspeccion/400/300',
+    imageHint: 'introspection candle'
+  },
+  {
+    id: 'cuaderno',
+    name: 'Cuaderno de Rituales',
+    description: 'Plasma tus ideas, sueños y rituales diarios.',
+    imageUrl: 'https://picsum.photos/seed/cuaderno-rituales/400/300',
+    imageHint: 'ritual journal'
   }
 ];
 
@@ -71,13 +91,14 @@ export default function TiendaPage() {
         
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
           {products.map((product) => (
-            <Card key={product.name} className="overflow-hidden shadow-lg hover:shadow-xl transition-shadow">
+            <Card key={product.id} className="overflow-hidden shadow-lg hover:shadow-xl transition-shadow">
               <CardHeader className="p-0">
                 <Image
                   src={product.imageUrl}
                   alt={product.name}
                   width={400}
                   height={300}
+                  data-ai-hint={product.imageHint}
                   className="object-cover w-full h-60"
                 />
               </CardHeader>
