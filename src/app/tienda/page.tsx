@@ -44,7 +44,7 @@ export default function TiendaPage() {
         imageUrls: [
           'https://emberacreatyve.myshopify.com/cdn/shop/files/e5568e99-6685-465e-a758-0d3a007ffc77.webp?v=1760644516&width=832',
           'https://emberacreatyve.myshopify.com/cdn/shop/files/955b4e05-b22b-4c2d-b780-326b73d03c8f.webp?v=1760644515&width=832',
-          'https://emberacreatyve.myshopify.com/cdn/shop/files/gildan-18500-unisex-heavy-blend-hoodie-black-zoomed-in-68f760e90a071.jpg?v=1760596396&width=832'
+          'https://emberacreatyve.myshopify.com/cdn/shop/files/f67aad9c-9857-4395-acdf-68e2e6889ea2.webp?v=1760644516&width=832'
         ],
         imageHint: 'pre-columbian hoodie',
         shopifyUrl: 'https://emberacreatyve.myshopify.com/products/precolombino-design-heavy-blend-hoodie-unique-cultural-artistry?variant=55875846963580'
