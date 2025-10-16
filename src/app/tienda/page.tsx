@@ -15,6 +15,7 @@ interface Product {
   description: string;
   imageUrl: string;
   imageHint: string;
+  shopifyUrl: string;
 }
 
 export default function TiendaPage() {
@@ -27,36 +28,41 @@ export default function TiendaPage() {
         id: 'sudadera-ecologica-unisex',
         name: 'Sudadera Ecológica Unisex',
         description: 'Confeccionada en algodón orgánico, esta camiseta es suave, resistente y cómoda. Tu nombre, tu símbolo. Tu camiseta, tu ritual.',
-        imageUrl: 'https://picsum.photos/seed/sudadera-unisex/600/600',
-        imageHint: 'organic sweatshirt'
+        imageUrl: '/imagen100.webp',
+        imageHint: 'organic sweatshirt',
+        shopifyUrl: 'https://emberacreatyve.myshopify.com/products/unisex-eco-sweatshirt?variant=55859785105788'
       },
       {
         id: 'taza-de-la-gratitud',
         name: 'Taza de la Gratitud',
         description: 'Un objeto para iniciar tus mañanas con intención.',
         imageUrl: 'https://picsum.photos/seed/taza-gratitud/600/600',
-        imageHint: 'gratitude mug'
+        imageHint: 'gratitude mug',
+        shopifyUrl: '#' // TODO: Add Shopify URL
       },
       {
         id: 'bolso-de-la-migracion-creativa',
         name: 'Bolso de la Migración Creativa',
         description: 'Para llevar contigo el símbolo de tu viaje.',
         imageUrl: 'https://picsum.photos/seed/bolso-migracion/600/600',
-        imageHint: 'creative bag'
+        imageHint: 'creative bag',
+        shopifyUrl: '#' // TODO: Add Shopify URL
       },
       {
         id: 'vela-de-la-introspeccion',
         name: 'Vela de la Introspección',
         description: 'Ilumina tus momentos de reflexión y calma.',
         imageUrl: 'https://picsum.photos/seed/vela-introspeccion/600/600',
-        imageHint: 'introspection candle'
+        imageHint: 'introspection candle',
+        shopifyUrl: '#' // TODO: Add Shopify URL
       },
       {
         id: 'cuaderno-de-rituales',
         name: 'Cuaderno de Rituales',
         description: 'Plasma tus ideas, sueños y rituales diarios.',
         imageUrl: 'https://picsum.photos/seed/cuaderno-rituales/600/600',
-        imageHint: 'ritual journal'
+        imageHint: 'ritual journal',
+        shopifyUrl: '#' // TODO: Add Shopify URL
       }
     ];
 
@@ -102,8 +108,8 @@ export default function TiendaPage() {
                   <CardTitle className="text-2xl font-bold mb-2">{product.name}</CardTitle>
                   <CardDescription className="text-base mb-4 flex-grow">{product.description}</CardDescription>
                   <Button asChild className="w-full mt-auto">
-                    <Link href={`/tienda/${product.id}`}>
-                      Quiero este objeto
+                    <Link href={product.shopifyUrl} target="_blank" rel="noopener noreferrer">
+                      Ver en la tienda
                     </Link>
                   </Button>
                 </CardContent>
