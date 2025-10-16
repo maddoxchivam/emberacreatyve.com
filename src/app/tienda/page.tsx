@@ -77,7 +77,7 @@ export default function TiendaPage() {
                             height={600}
                             data-ai-hint={product.imageHint}
                             className="object-cover w-full h-80"
-                            unoptimized={url.startsWith('https://emberacreatyve.myshopify.com')}
+                            unoptimized={true}
                           />
                         </CarouselItem>
                       ))}
