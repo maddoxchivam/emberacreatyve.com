@@ -36,6 +36,18 @@ export default function TiendaPage() {
         ],
         imageHint: 'organic sweatshirt',
         shopifyUrl: 'https://emberacreatyve.myshopify.com/products/unisex-eco-sweatshirt?variant=55859785105788'
+      },
+      {
+        id: 'sudadera-precolombino',
+        name: 'Sudadera con Capucha Precolombino',
+        description: 'Sumérgete en la riqueza de la historia con nuestra Sudadera con Capucha Precolombino Heavy Blend. Un diseño que rinde homenaje a las culturas ancestrales.',
+        imageUrls: [
+          'https://emberacreatyve.myshopify.com/cdn/shop/files/gildan-18500-unisex-heavy-blend-hoodie-black-front-68f760e909944.jpg?v=1760596395&width=832',
+          'https://emberacreatyve.myshopify.com/cdn/shop/files/gildan-18500-unisex-heavy-blend-hoodie-black-back-68f760e908906.jpg?v=1760596394&width=832',
+          'https://emberacreatyve.myshopify.com/cdn/shop/files/gildan-18500-unisex-heavy-blend-hoodie-black-zoomed-in-68f760e90a071.jpg?v=1760596396&width=832'
+        ],
+        imageHint: 'pre-columbian hoodie',
+        shopifyUrl: 'https://emberacreatyve.myshopify.com/products/precolombino-design-heavy-blend-hoodie-unique-cultural-artistry?variant=55875846963580'
       }
     ];
 
@@ -59,9 +71,12 @@ export default function TiendaPage() {
           <p className="text-lg text-muted-foreground">Cada objeto es un ancla, un símbolo para tu práctica diaria.</p>
         </div>
         
-        <div className="flex justify-center">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 justify-items-center">
           {isLoading ? (
-            <Skeleton className="h-[550px] w-full max-w-sm" />
+            <>
+              <Skeleton className="h-[550px] w-full max-w-sm" />
+              <Skeleton className="h-[550px] w-full max-w-sm" />
+            </>
           ) : (
             products.map((product) => (
               <Card key={product.id} className="overflow-hidden shadow-lg hover:shadow-xl transition-shadow flex flex-col max-w-sm">
