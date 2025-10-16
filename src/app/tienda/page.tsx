@@ -59,14 +59,12 @@ export default function TiendaPage() {
           <p className="text-lg text-muted-foreground">Cada objeto es un ancla, un símbolo para tu práctica diaria.</p>
         </div>
         
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12 justify-center">
+        <div className="flex justify-center">
           {isLoading ? (
-            Array.from({ length: 1 }).map((_, index) => (
-              <Skeleton key={index} className="h-[450px] w-full" />
-            ))
+            <Skeleton className="h-[550px] w-full max-w-sm" />
           ) : (
             products.map((product) => (
-              <Card key={product.id} className="overflow-hidden shadow-lg hover:shadow-xl transition-shadow flex flex-col">
+              <Card key={product.id} className="overflow-hidden shadow-lg hover:shadow-xl transition-shadow flex flex-col max-w-sm">
                 <CardHeader className="p-0 relative">
                   <Carousel className="w-full">
                     <CarouselContent>
@@ -78,7 +76,7 @@ export default function TiendaPage() {
                             width={600}
                             height={600}
                             data-ai-hint={product.imageHint}
-                            className="object-cover w-full h-72"
+                            className="object-cover w-full h-80"
                           />
                         </CarouselItem>
                       ))}
@@ -90,7 +88,7 @@ export default function TiendaPage() {
                 <CardContent className="p-6 flex flex-col flex-grow">
                   <CardTitle className="text-2xl font-bold mb-2">{product.name}</CardTitle>
                   <CardDescription className="text-base mb-4 flex-grow">{product.description}</CardDescription>
-                  <Button asChild className="w-full mt-auto">
+                  <Button asChild className="w-full mt-auto" size="lg">
                     <Link href={product.shopifyUrl} target="_blank" rel="noopener noreferrer">
                       Ver en la tienda
                     </Link>
