@@ -36,7 +36,7 @@ export default function Hero() {
           </div>
           <div className="flex flex-col items-center space-y-6">
             <Button asChild size="lg">
-              <Link href="https://emberacreatyve.myshopify.com/" target="_blank" rel="noopener noreferrer">
+              <Link href="/tienda">
                 Ir a la Tienda
               </Link>
             </Button>
@@ -97,7 +97,7 @@ export default function Hero() {
             </div>
             <div className="pt-6 text-center">
               <Button asChild size="lg">
-                <Link href="https://emberacreatyve.myshopify.com/" target="_blank" rel="noopener noreferrer">
+                <Link href="/tienda">
                   Visita Nuestra Tienda
                 </Link>
               </Button>
