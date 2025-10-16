@@ -8,12 +8,13 @@ import { Button } from '@/components/ui/button';
 import Link from 'next/link';
 import { ArrowLeft } from 'lucide-react';
 import { Skeleton } from '@/components/ui/skeleton';
+import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from '@/components/ui/carousel';
 
 interface Product {
   id: string;
   name: string;
   description: string;
-  imageUrl: string;
+  imageUrls: string[];
   imageHint: string;
   shopifyUrl: string;
 }
@@ -28,7 +29,11 @@ export default function TiendaPage() {
         id: 'sudadera-ecologica-unisex',
         name: 'Sudadera Ecológica Unisex',
         description: 'Confeccionada en algodón orgánico, esta camiseta es suave, resistente y cómoda. Tu nombre, tu símbolo. Tu camiseta, tu ritual.',
-        imageUrl: '/imagen100.webp',
+        imageUrls: [
+          '/imagen100.webp',
+          'https://picsum.photos/seed/sudadera-2/600/600',
+          'https://picsum.photos/seed/sudadera-3/600/600'
+        ],
         imageHint: 'organic sweatshirt',
         shopifyUrl: 'https://emberacreatyve.myshopify.com/products/unisex-eco-sweatshirt?variant=55859785105788'
       },
@@ -36,33 +41,33 @@ export default function TiendaPage() {
         id: 'taza-de-la-gratitud',
         name: 'Taza de la Gratitud',
         description: 'Un objeto para iniciar tus mañanas con intención.',
-        imageUrl: 'https://picsum.photos/seed/taza-gratitud/600/600',
+        imageUrls: ['https://picsum.photos/seed/taza-gratitud/600/600'],
         imageHint: 'gratitude mug',
-        shopifyUrl: '#' // TODO: Add Shopify URL
+        shopifyUrl: '#'
       },
       {
         id: 'bolso-de-la-migracion-creativa',
         name: 'Bolso de la Migración Creativa',
         description: 'Para llevar contigo el símbolo de tu viaje.',
-        imageUrl: 'https://picsum.photos/seed/bolso-migracion/600/600',
+        imageUrls: ['https://picsum.photos/seed/bolso-migracion/600/600'],
         imageHint: 'creative bag',
-        shopifyUrl: '#' // TODO: Add Shopify URL
+        shopifyUrl: '#'
       },
       {
         id: 'vela-de-la-introspeccion',
         name: 'Vela de la Introspección',
         description: 'Ilumina tus momentos de reflexión y calma.',
-        imageUrl: 'https://picsum.photos/seed/vela-introspeccion/600/600',
+        imageUrls: ['https://picsum.photos/seed/vela-introspeccion/600/600'],
         imageHint: 'introspection candle',
-        shopifyUrl: '#' // TODO: Add Shopify URL
+        shopifyUrl: '#'
       },
       {
         id: 'cuaderno-de-rituales',
         name: 'Cuaderno de Rituales',
         description: 'Plasma tus ideas, sueños y rituales diarios.',
-        imageUrl: 'https://picsum.photos/seed/cuaderno-rituales/600/600',
+        imageUrls: ['https://picsum.photos/seed/cuaderno-rituales/600/600'],
         imageHint: 'ritual journal',
-        shopifyUrl: '#' // TODO: Add Shopify URL
+        shopifyUrl: '#'
       }
     ];
 
@@ -89,20 +94,30 @@ export default function TiendaPage() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
           {isLoading ? (
             Array.from({ length: 3 }).map((_, index) => (
-              <Skeleton key={index} className="h-96 w-full" />
+              <Skeleton key={index} className="h-[450px] w-full" />
             ))
           ) : (
             products.map((product) => (
               <Card key={product.id} className="overflow-hidden shadow-lg hover:shadow-xl transition-shadow flex flex-col">
-                <CardHeader className="p-0">
-                  <Image
-                    src={product.imageUrl}
-                    alt={product.name}
-                    width={600}
-                    height={600}
-                    data-ai-hint={product.imageHint}
-                    className="object-cover w-full h-72"
-                  />
+                <CardHeader className="p-0 relative">
+                  <Carousel className="w-full">
+                    <CarouselContent>
+                      {product.imageUrls.map((url, index) => (
+                        <CarouselItem key={index}>
+                          <Image
+                            src={url}
+                            alt={`${product.name} - imagen ${index + 1}`}
+                            width={600}
+                            height={600}
+                            data-ai-hint={product.imageHint}
+                            className="object-cover w-full h-72"
+                          />
+                        </CarouselItem>
+                      ))}
+                    </CarouselContent>
+                    <CarouselPrevious className="absolute left-4 top-1/2 -translate-y-1/2" />
+                    <CarouselNext className="absolute right-4 top-1/2 -translate-y-1/2" />
+                  </Carousel>
                 </CardHeader>
                 <CardContent className="p-6 flex flex-col flex-grow">
                   <CardTitle className="text-2xl font-bold mb-2">{product.name}</CardTitle>
