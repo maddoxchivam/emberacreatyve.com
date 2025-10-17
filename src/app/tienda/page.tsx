@@ -52,7 +52,7 @@ export default function TiendaPage() {
       {
         id: 'eternal-legacy-hoodie',
         name: 'Eternal Legacy Hoodie with Barcode Symbol',
-        description: 'This Eternal Legacy Hoodie features a unique barcode emblem, symbolizing the digital signature of our modern identities. Crafted for comfort and style, it\'s a statement piece that merges contemporary art with everyday wear.',
+        description: "This Eternal Legacy Hoodie features a unique barcode emblem, symbolizing the digital signature of our modern identities. Crafted for comfort and style, it's a statement piece that merges contemporary art with everyday wear.",
         imageUrls: [
           'https://emberacreatyve.myshopify.com/cdn/shop/files/530119bc-d5c6-499c-980b-6af419a9ae16.webp?v=1760664060&width=832',
           'https://emberacreatyve.myshopify.com/cdn/shop/files/1ed1d1e6-9012-4919-9623-c58f353cb35a.webp?v=1760664061&width=832',
@@ -68,7 +68,7 @@ export default function TiendaPage() {
         imageUrls: [
           'https://emberacreatyve.myshopify.com/cdn/shop/files/67467e23-3874-4e7f-a5ff-51f81ac69754.webp?v=1760667603&width=832',
           'https://emberacreatyve.myshopify.com/cdn/shop/files/08749be1-91f4-4563-8506-3b05f3de5001.webp?v=1760667602&width=832',
-          'https://emberacreatyve.myshopify.com/cdn/shop/files/70a2a5e9-d4c3-4d1a-be2c-4a37f29f07a7.webp?v=1760664877&width=832'
+          'https://emberacreatyve.myshopify.com/cdn/shop/files/e03127d4-346c-4368-af16-f1241d5b51a0.webp?v=1760667601&width=832'
         ],
         imageHint: 'angel wing hoodie',
         shopifyUrl: 'https://emberacreatyve.myshopify.com/products/blue-angel-wing-hoodie-for-girls-comfortable-unisex-style?variant=55876190339452'
