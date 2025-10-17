@@ -3,6 +3,7 @@ import './globals.css';
 import { cn } from '@/lib/utils';
 import { Toaster } from "@/components/ui/toaster"
 import { Audiowide, PT_Sans } from 'next/font/google';
+import { FirebaseClientProvider } from '@/firebase/client-provider';
 
 const audiowide = Audiowide({
   subsets: ['latin'],
@@ -35,7 +36,9 @@ export default function RootLayout({
     <html lang="es" suppressHydrationWarning className={`${audiowide.variable} ${ptSans.variable}`}>
       <head />
       <body className={cn('font-body antialiased min-h-screen bg-background')}>
-        {children}
+        <FirebaseClientProvider>
+          {children}
+        </FirebaseClientProvider>
         <Toaster />
       </body>
     </html>
