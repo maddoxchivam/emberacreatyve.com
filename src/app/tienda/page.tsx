@@ -67,7 +67,7 @@ export default function TiendaPage() {
         name: 'Angel Wings Unisex Hoodie',
         description: 'Premium print design in assorted colors. Express your celestial style with this comfortable and unique hoodie.',
         imageUrls: [
-          'https://picsum.photos/seed/a1/832/832',
+          'https://emberacreatyve.myshopify.com/cdn/shop/files/096e59f9-1118-4385-86d5-842aab2c8f65.webp?v=1760734901&width=832',
           'https://picsum.photos/seed/a2/832/832',
           'https://picsum.photos/seed/a3/832/832'
         ],
