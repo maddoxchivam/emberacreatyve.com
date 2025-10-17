@@ -61,6 +61,18 @@ export default function TiendaPage() {
         ],
         imageHint: 'angel wing hoodie',
         shopifyUrl: 'https://emberacreatyve.myshopify.com/products/blue-angel-wing-hoodie-for-girls-comfortable-unisex-style?variant=55876190339452'
+      },
+      {
+        id: 'angel-wings-unisex-hoodie',
+        name: 'Angel Wings Unisex Hoodie',
+        description: 'Premium print design in assorted colors. Express your celestial style with this comfortable and unique hoodie.',
+        imageUrls: [
+          'https://picsum.photos/seed/a1/832/832',
+          'https://picsum.photos/seed/a2/832/832',
+          'https://picsum.photos/seed/a3/832/832'
+        ],
+        imageHint: 'angel wings hoodie',
+        shopifyUrl: 'https://emberacreatyve.myshopify.com/products/angel-wings-unisex-hoodie-premium-print-design-in-assorted-colors?variant=55880407384444'
       }
     ];
 
