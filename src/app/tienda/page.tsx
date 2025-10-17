@@ -68,7 +68,7 @@ export default function TiendaPage() {
         description: 'Premium print design in assorted colors. Express your celestial style with this comfortable and unique hoodie.',
         imageUrls: [
           'https://emberacreatyve.myshopify.com/cdn/shop/files/096e59f9-1118-4385-86d5-842aab2c8f65.webp?v=1760734901&width=832',
-          'https://picsum.photos/seed/a2/832/832',
+          'https://emberacreatyve.myshopify.com/cdn/shop/files/0eb77948-725b-4f3c-a892-ba8a1f513b0c.webp?v=1760734900&width=832',
           'https://picsum.photos/seed/a3/832/832'
         ],
         imageHint: 'angel wings hoodie',
