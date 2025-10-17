@@ -48,6 +48,18 @@ export default function TiendaPage() {
         ],
         imageHint: 'pre-columbian hoodie',
         shopifyUrl: 'https://emberacreatyve.myshopify.com/products/precolombino-design-heavy-blend-hoodie-unique-cultural-artistry?variant=55875846963580'
+      },
+      {
+        id: 'eternal-legacy-hoodie',
+        name: 'Eternal Legacy Hoodie with Barcode Symbol',
+        description: 'This Eternal Legacy Hoodie features a unique barcode emblem, symbolizing the digital signature of our modern identities. Crafted for comfort and style, it\'s a statement piece that merges contemporary art with everyday wear.',
+        imageUrls: [
+          'https://emberacreatyve.myshopify.com/cdn/shop/files/4b14d339-38f3-4c07-8b5a-7182d33d98be.webp?v=1760647895&width=832',
+          'https://emberacreatyve.myshopify.com/cdn/shop/files/7438e788-5188-4674-a745-42df22c6c19f.webp?v=1760647895&width=832',
+          'https://emberacreatyve.myshopify.com/cdn/shop/files/6f8f5b40-84c3-4d61-b461-1ffc338421d0.webp?v=1760647895&width=832'
+        ],
+        imageHint: 'barcode hoodie',
+        shopifyUrl: 'https://emberacreatyve.myshopify.com/products/eternal-legacy-hoodie-with-barcode-symbol-unisex-comfortable-wear?variant=55876159373692'
       }
     ];
 
@@ -71,9 +83,10 @@ export default function TiendaPage() {
           <p className="text-lg text-muted-foreground">Cada objeto es un ancla, un símbolo para tu práctica diaria.</p>
         </div>
         
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 justify-items-center">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 justify-items-center">
           {isLoading ? (
             <>
+              <Skeleton className="h-[550px] w-full max-w-sm" />
               <Skeleton className="h-[550px] w-full max-w-sm" />
               <Skeleton className="h-[550px] w-full max-w-sm" />
             </>
