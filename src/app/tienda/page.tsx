@@ -56,7 +56,7 @@ export default function TiendaPage() {
         imageUrls: [
           'https://emberacreatyve.myshopify.com/cdn/shop/files/530119bc-d5c6-499c-980b-6af419a9ae16.webp?v=1760664060&width=832',
           'https://emberacreatyve.myshopify.com/cdn/shop/files/1ed1d1e6-9012-4919-9623-c58f353cb35a.webp?v=1760664061&width=832',
-          'https://emberacreatyve.myshopify.com/cdn/shop/files/6f8f5b40-84c3-4d61-b461-1ffc338421d0.webp?v=1760647895&width=832'
+          'https://emberacreatyve.myshopify.com/cdn/shop/files/bd10aac7-207a-4b28-8603-55a04bca53ee.webp?v=1760664060&width=832'
         ],
         imageHint: 'barcode hoodie',
         shopifyUrl: 'https://emberacreatyve.myshopify.com/products/eternal-legacy-hoodie-with-barcode-symbol-unisex-comfortable-wear?variant=55876159373692'
