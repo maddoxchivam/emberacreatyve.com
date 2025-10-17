@@ -67,7 +67,7 @@ export default function TiendaPage() {
         description: 'This Blue Angel Wing Hoodie for girls offers a comfortable, unisex style perfect for everyday wear. The unique design features angel wings on the back, adding a touch of celestial charm to your wardrobe. Made from high-quality materials, it provides both warmth and durability.',
         imageUrls: [
           'https://emberacreatyve.myshopify.com/cdn/shop/files/67467e23-3874-4e7f-a5ff-51f81ac69754.webp?v=1760667603&width=832',
-          'https://emberacreatyve.myshopify.com/cdn/shop/files/1d13d719-7d0c-449e-b8d4-8d4957581297.webp?v=1760664878&width=832',
+          'https://emberacreatyve.myshopify.com/cdn/shop/files/08749be1-91f4-4563-8506-3b05f3de5001.webp?v=1760667602&width=832',
           'https://emberacreatyve.myshopify.com/cdn/shop/files/70a2a5e9-d4c3-4d1a-be2c-4a37f29f07a7.webp?v=1760664877&width=832'
         ],
         imageHint: 'angel wing hoodie',
