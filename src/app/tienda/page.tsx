@@ -26,18 +26,6 @@ export default function TiendaPage() {
   useEffect(() => {
     const fetchedProducts: Product[] = [
       {
-        id: 'sudadera-ecologica-unisex',
-        name: 'Sudadera Ecológica Unisex',
-        description: 'Confeccionada en algodón orgánico, esta camiseta es suave, resistente y cómoda. Tu nombre, tu símbolo. Tu camiseta, tu ritual.',
-        imageUrls: [
-          'https://emberacreatyve.myshopify.com/cdn/shop/files/unisex-eco-sweatshirt-white-front-68eb4ce3c5748.jpg?v=1760251117&width=3840',
-          'https://emberacreatyve.myshopify.com/cdn/shop/files/cotton-heritage-m2580-i-unisex-premium-pullover-hoodie-white-front-68eb4f0d9f446.jpg?v=1760251683&width=832',
-          'https://emberacreatyve.myshopify.com/cdn/shop/files/cotton-heritage-m2580-i-unisex-premium-pullover-hoodie-white-back-68eb4f0d9e158.jpg?v=1760251682&width=832'
-        ],
-        imageHint: 'organic sweatshirt',
-        shopifyUrl: 'https://emberacreatyve.myshopify.com/products/unisex-eco-sweatshirt?variant=55859785105788'
-      },
-      {
         id: 'sudadera-precolombino',
         name: 'Sudadera con Capucha Precolombino',
         description: 'Sumérgete en la riqueza de la historia con nuestra Sudadera con Capucha Precolombino Heavy Blend. Un diseño que rinde homenaje a las culturas ancestrales.',
