@@ -68,7 +68,8 @@ export default function TiendaPage() {
         imageUrls: [
           'https://emberacreatyve.myshopify.com/cdn/shop/files/67467e23-3874-4e7f-a5ff-51f81ac69754.webp?v=1760667603&width=832',
           'https://emberacreatyve.myshopify.com/cdn/shop/files/08749be1-91f4-4563-8506-3b05f3de5001.webp?v=1760667602&width=832',
-          'https://emberacreatyve.myshopify.com/cdn/shop/files/e03127d4-346c-4368-af16-f1241d5b51a0.webp?v=1760667601&width=832'
+          'https://emberacreatyve.myshopify.com/cdn/shop/files/e03127d4-346c-4368-af16-f1241d5b51a0.webp?v=1760667601&width=832',
+          'https://emberacreatyve.myshopify.com/cdn/shop/files/b955b85d-b3bd-424e-a55d-5f0ef2a54f3a.webp?v=1760667601&width=832'
         ],
         imageHint: 'angel wing hoodie',
         shopifyUrl: 'https://emberacreatyve.myshopify.com/products/blue-angel-wing-hoodie-for-girls-comfortable-unisex-style?variant=55876190339452'
