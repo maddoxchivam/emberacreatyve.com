@@ -30,8 +30,8 @@ export default function TiendaPage() {
         name: 'Sudadera Ecológica Unisex',
         description: 'Confeccionada en algodón orgánico, esta camiseta es suave, resistente y cómoda. Tu nombre, tu símbolo. Tu camiseta, tu ritual.',
         imageUrls: [
-          'https://emberacreatyve.myshopify.com/cdn/shop/files/cotton-heritage-m2580-i-unisex-premium-pullover-hoodie-white-front-68eb4f0d9f446.jpg?v=1760251683&width=832',
           'https://emberacreatyve.myshopify.com/cdn/shop/files/unisex-eco-sweatshirt-white-front-68eb4ce3c5748.jpg?v=1760251117&width=3840',
+          'https://emberacreatyve.myshopify.com/cdn/shop/files/cotton-heritage-m2580-i-unisex-premium-pullover-hoodie-white-front-68eb4f0d9f446.jpg?v=1760251683&width=832',
           'https://emberacreatyve.myshopify.com/cdn/shop/files/cotton-heritage-m2580-i-unisex-premium-pullover-hoodie-white-back-68eb4f0d9e158.jpg?v=1760251682&width=832'
         ],
         imageHint: 'organic sweatshirt',
@@ -60,11 +60,26 @@ export default function TiendaPage() {
         ],
         imageHint: 'barcode hoodie',
         shopifyUrl: 'https://emberacreatyve.myshopify.com/products/eternal-legacy-hoodie-with-barcode-symbol-unisex-comfortable-wear?variant=55876159373692'
+      },
+      {
+        id: 'blue-angel-wing-hoodie',
+        name: 'Blue Angel Wing Hoodie for Girls',
+        description: 'This Blue Angel Wing Hoodie for girls offers a comfortable, unisex style perfect for everyday wear. The unique design features angel wings on the back, adding a touch of celestial charm to your wardrobe. Made from high-quality materials, it provides both warmth and durability.',
+        imageUrls: [
+          'https://emberacreatyve.myshopify.com/cdn/shop/files/f6f63459-25f3-4d04-8025-b4618e77c8e9.webp?v=1760664877&width=832',
+          'https://emberacreatyve.myshopify.com/cdn/shop/files/1d13d719-7d0c-449e-b8d4-8d4957581297.webp?v=1760664878&width=832',
+          'https://emberacreatyve.myshopify.com/cdn/shop/files/70a2a5e9-d4c3-4d1a-be2c-4a37f29f07a7.webp?v=1760664877&width=832'
+        ],
+        imageHint: 'angel wing hoodie',
+        shopifyUrl: 'https://emberacreatyve.myshopify.com/products/blue-angel-wing-hoodie-for-girls-comfortable-unisex-style?variant=55876190339452'
       }
     ];
 
-    setProducts(fetchedProducts);
-    setIsLoading(false);
+    // Simulate a short delay for loading
+    setTimeout(() => {
+      setProducts(fetchedProducts);
+      setIsLoading(false);
+    }, 500);
   }, []);
 
   return (
@@ -85,11 +100,9 @@ export default function TiendaPage() {
         
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 justify-items-center">
           {isLoading ? (
-            <>
-              <Skeleton className="h-[550px] w-full max-w-sm" />
-              <Skeleton className="h-[550px] w-full max-w-sm" />
-              <Skeleton className="h-[550px] w-full max-w-sm" />
-            </>
+            Array.from({ length: products.length || 3 }).map((_, index) => (
+              <Skeleton key={index} className="h-[550px] w-full max-w-sm" />
+            ))
           ) : (
             products.map((product) => (
               <Card key={product.id} className="overflow-hidden shadow-lg hover:shadow-xl transition-shadow flex flex-col max-w-sm">
